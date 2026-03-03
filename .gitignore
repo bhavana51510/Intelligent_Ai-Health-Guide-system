@@ -1,0 +1,19 @@
+# Virtual environments
+.venv/
+venv/
+__pycache__/
+
+# VS Code
+.vscode/
+
+# Upload folders
+uploads/
+
+# Training dataset (IMPORTANT)
+dataset/
+
+# CNN training data (if separate)
+cnn/dataset/
+
+# Optional: ignore large trained models
+# models/*.h5

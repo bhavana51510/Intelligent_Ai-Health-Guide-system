@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Health Guidance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- =============================
+     NAVBAR
+============================== -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">AI Health</div>
+
+    <div class="nav-links">
+      <a href="#symptom-section">Symptoms</a>
+      <a href="#image-section">Image Scan</a>
+      <a href="#results-section">Results</a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="app-container">
+
+  <!-- =============================
+       HERO SECTION
+  ============================== -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>
+        Intelligent AI Health Assistance
+      </h1>
+      <p>
+        Analyze symptoms or minor injuries using AI  
+        and receive nearby hospital recommendations instantly.
+      </p>
+    </div>
+  </header>
+
+
+  <!-- =============================
+       SYMPTOM INPUT SECTION
+  ============================== -->
+  <section id="symptom-section" class="card-section">
+
+    <div class="card-header">
+      <h2>Symptom Analysis</h2>
+      <span class="card-tag">AI Text Model</span>
+    </div>
+
+    <textarea
+      id="symptoms"
+      placeholder="Describe your symptoms clearly (e.g., eye pain, blurred vision, toothache...)"
+    ></textarea>
+
+    <div class="actions">
+      <button class="btn secondary" onclick="getLocation()">
+        📍 Detect Location
+      </button>
+
+      <button class="btn primary" onclick="analyze()">
+        Analyze
+      </button>
+    </div>
+
+    <div id="location-status" class="status"></div>
+
+  </section>
+
+
+  <!-- =============================
+       IMAGE ANALYSIS SECTION
+  ============================== -->
+  <section id="image-section" class="card-section">
+
+    <div class="card-header">
+      <h2>Minor Injury Image Scan</h2>
+      <span class="card-tag glow-tag">CNN Model</span>
+    </div>
+
+    <p class="note">
+      Upload minor visible injuries only (cuts, burns, abrasions, rashes).  
+      This system does not diagnose internal conditions.
+    </p>
+
+    <div class="actions">
+      <input type="file" id="imageUpload" accept="image/*" />
+      <button class="btn secondary" onclick="uploadImage()">
+        Upload & Analyze
+      </button>
+    </div>
+
+    <div id="preview" class="image-preview"></div>
+
+  </section>
+
+
+  <!-- =============================
+       RESULTS SECTION
+  ============================== -->
+  <section id="results-section" class="results-section">
+
+    <div class="results-header">
+      <h2>First Aid Guidance & Hospital Recommendation</h2>
+      <div id="category-title"></div>
+    </div>
+
+    <div class="disclaimer-box">
+      ⚠️ This system does NOT provide medical diagnosis.  
+      It offers AI-based first aid guidance and hospital recommendations only.  
+      Always consult a certified medical professional doctor for proper treatment.
+    </div> 
+
+    <!-- First Aid -->
+    <div id="first-aid-section" class="first-aid-box" style="display:none;">
+      <h3>Immediate First Aid Guidance</h3>
+      <ul id="first-aid-list"></ul>
+      <p class="note">
+        This is basic guidance. Seek professional medical care if symptoms persist.
+      </p>
+    </div>
+
+    <!-- Hospitals -->
+    <div id="results" class="results-grid"></div>
+
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
