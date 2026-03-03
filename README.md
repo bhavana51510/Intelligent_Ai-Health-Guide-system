@@ -113,26 +113,7 @@ Intelligent_Ai-Health-Guide-system/
 
 ## ▶️ How to Run Locally
 
-### 1️⃣ Clone Repository
-
-```
-git clone https://github.com/YOUR_USERNAME/Intelligent_Ai-Health-Guide-system.git
-cd Intelligent_Ai-Health-Guide-system
-```
-
-### 2️⃣ Install Dependencies
-
-```
-pip install -r requirements.txt
-```
-
-### 3️⃣ Run Application
-
-```
-python app.py
-```
-
-### 4️⃣ Open in Browser
+###  Open in Browser
 
 ```
 http://127.0.0.1:5000
@@ -150,7 +131,7 @@ Always consult a certified healthcare professional for medical emergencies.
 
 ## 🏗️ Future Improvements
 
-- Cloud deployment (AWS / Render / Railway)
+- Cloud deployment (AWS / Render )
 - User authentication system
 - Database-backed hospital system
 - Improved CNN accuracy with data augmentation
@@ -159,14 +140,3 @@ Always consult a certified healthcare professional for medical emergencies.
 
 ---
 
-## 👩‍💻 Author
-
-**Bhavana Mallareddy**  
-B.Tech Computer Science (Data Science)  
-Woxsen University  
-
----
-
-## 📌 License
-
-This project is licensed under the MIT License.
