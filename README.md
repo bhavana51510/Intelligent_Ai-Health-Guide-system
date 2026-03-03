@@ -48,3 +48,31 @@ An intelligent AI-powered web application that analyzes user symptoms or minor i
 ---
 
 ## 📁 Project Structure
+```
+ai-health-guide-system/
+│
+├── backend/
+│   ├── cnn_model.py
+│   ├── hospital_service.py
+│   ├── image_rules.py
+│   ├── first_aid.py
+│   └── …
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── models/
+│   ├── symptom_category_model.pkl
+│   ├── tfidf_vectorizer.pkl
+│   ├── skin_cnn_final.h5
+│
+├── cnn/
+│   ├── train_cnn.py
+│   └── predict.py
+│
+├── app.py
+├── requirements.txt
+└── README.md
+```
